@@ -1,0 +1,304 @@
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	border : 0;
+	outline : 0;
+	font-size : 100%;
+	vertical-align : baseline;
+	background : transparent;
+	margin : 0;
+	padding : 0;
+}
+body {
+	line-height : 1;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; 
+	-moz-user-select: none;    
+	-ms-user-select: none;     
+	-o-user-select: none;
+	user-select: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display : block;
+}
+nav ul {
+	list-style : none;
+}
+blockquote, q {
+	quotes : none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content : none;
+}
+a {
+	font-size : 100%;
+	vertical-align : baseline;
+	background : transparent;
+	margin : 0;
+	padding : 0;
+	text-decoration: none;
+	color:wihte;
+}
+a:visited{color:white}
+a:hover{color:#9F0}
+ins {
+	background-color : #ff9;
+	color : #000;
+	text-decoration : none;
+}
+mark {
+	background-color : #ff9;
+	color : #000;
+	font-style : italic;
+	font-weight : 700;
+}
+del {
+	text-decoration : line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom : 1px dotted;
+	cursor : help;
+}
+table {
+	border-collapse : collapse;
+	border-spacing : 0;
+}
+hr {
+	display : block;
+	height : 1px;
+	border : 0;
+	border-top : 1px solid #ccc;
+	margin : 1em 0;
+	padding : 0;
+}
+input, select {
+	vertical-align : middle;
+}
+body {
+	background : #FCC;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #red), color-stop(1, #FFF) );
+	background:-moz-linear-gradient( center top, #FCC 5%, #FFF 100% );
+
+}
+
+.play {
+	background:url(../images/sound_speaker_volume.png) no-repeat 0px 0px !important;	
+}
+
+.pause {
+	background:url(../images/sound_speaker_volume.png) no-repeat 0px -40px !important;	
+}
+.bg-0 {
+	background:url(../images/bg_red.jpg)  no-repeat top center;	
+}
+
+.bg-cloud{
+	background:url(../images/cloud.png)  repeat-x center;		
+}
+.bg-270 {
+	background:url(../images/bg_purple.jpg)  no-repeat top center;
+}
+
+.bg-90 {
+	background:url(../images/bg_blue.jpg)  no-repeat top center;	
+}
+
+.bg-180 {
+	background:url(../images/bg_snow.jpg)  no-repeat top center;
+}
+.snow-panel {
+	z-index:1 !important;
+	position:fixed !important;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+
+.arrow-right{
+	width:71px;
+	height:43px;
+	position:absolute;
+	top:450px;
+	right:0;
+	cursor:pointer;
+	background:url(../images/arrow-right.png) no-repeat;
+	z-index:999;	
+}
+
+.arrow-right:hover{
+	top:452px;	
+	right:-1px;
+}
+
+.arrow-left{
+	width:71px;
+	height:43px;
+	position:absolute;
+	top:450px;
+	left:0;
+	cursor:pointer;
+	background:url(../images/arrow-left.png) no-repeat;		
+	z-index:999;	
+}
+
+.arrow-left:hover{
+	top:452px;
+	left:-1px;
+}
+.bgs>div {
+	width:100%;
+	height:100% !important;
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+div#cloud {
+	background : url(../images/cloud.png) repeat-x;
+	height : 425px;
+	z-index : 1;
+}
+div#cloud > p {
+	font-family : 'Open Sa;ns', sans-serif;
+	font-size : 60px;
+	font-weight : bold;
+	padding-top : 60px;
+	z-index : 3;
+	text-shadow : -2px 3px 12px #000000;
+	text-align : center;
+}
+section#birds-1{
+	background:url(../images/birds-1.png) no-repeat;
+	width: 194px;
+	height: 156px;
+	position: absolute;
+	cursor: pointer;
+	z-index:20;
+}
+section#birds-1 p,
+section#birds-3 p,
+section#birds-2 p{
+	padding: 3px 5px;
+	font-size: 16px;
+	border-radius: 3px;
+	background: #fff;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+section#birds-1:hover p,
+section#birds-3:hover p,
+section#birds-2:hover p{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+section#birds-2{
+	background:url(../images/birds-2.png) no-repeat;
+	width: 97px;
+	height: 78px;
+	margin-left: 400px;
+	position: absolute;
+	z-index:20;
+}
+
+section#birds-3{
+	background:url(../images/birds-3.png) no-repeat;
+	width: 276px;
+	height: 221px;
+	margin-left: 250px;
+	margin-top: 20%;
+	position: absolute;
+	cursor: pointer;
+	z-index:20;
+}
+article#content {
+	position : absolute;
+	z-index : 1;
+	width : 100%;
+	height : auto;
+	top : 60%;
+	color : #6abdc5;
+	text-align : right;
+	text-transform : uppercase;
+}
+article#content h1 {
+	font-size : 100px;
+	margin-right : 50px;
+	text-shadow : 2px 2px 0 #FFF;
+}
+article#content h2 {
+	font-size : 40px;
+	font-weight : normal;
+	margin-right : 50px;
+	text-shadow : 1px 1px 0 #FFF;
+}
+article#content h3 a {
+	color : #6abdc5;
+	font-size : 15px;
+	text-transform : none;
+	text-shadow : 1px 1px 0 #FFF;
+	margin-right : 50px;
+	text-decoration : none;
+}
+#city {
+	background : url(../images/city.png) top repeat-x;
+	width : 100%;
+	height : 535px;
+	position : absolute;
+	bottom : 0;
+	overflow : hidden;
+	z-index : 12;
+}
+#street{
+	height : 207px;
+	width : 100%;
+	position : absolute;
+	background : url(../images/street.png) top repeat-x;
+	bottom : 0;
+	overflow : hidden;
+	z-index : 2;
+}
+#duongtext {
+	z-index : 55;
+	height : 206px;
+	width : 100%;
+	position : absolute;
+	bottom : 0;
+	margin-left:-420px;
+	top:504px;
+}
+#dapxe {
+	z-index : 14;
+	position : absolute;
+	bottom : 0;
+	margin : 0 auto;
+	width : 100%;
+	text-align : center;
+	
+}
+#jingle-audio {
+	display:none !important;
+}
+
+#jingle-audio-control {
+	display:block;
+	position:fixed;
+	top:20px;
+	left:20px;
+	width:40px;
+	height:40px;
+	text-indent:-9999px;
+	z-index:2;
+}
